@@ -1,0 +1,165 @@
+<html>
+
+<head>
+	<title>那些年的风华绝代</title>
+
+	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script language=javascript src="jsp/niu.js"></script>
+
+	<script>
+
+	
+	$(document).ready(function () {
+
+
+		//get the default top value
+
+		var top_val = $('#menu li a').css('top');
+
+
+		//animate the selected menu item
+
+		$('#menu li.selected').children('a').stop().animate({top:0}, {easing: 'easeOutQuad', duration:500});
+		
+
+		$('#menu li').hover(
+
+			function () {
+
+				
+				//animate the menu item with 0 top value
+
+				$(this).children('a').stop().animate({top:0}, {easing: 'easeOutQuad', duration:500});
+		
+			},
+
+			function () {
+
+
+				//set the position to default
+
+				$(this).children('a').stop().animate({top:top_val}, {easing: 'easeOutQuad', duration:500});
+		
+
+				//always keep the previously selected item in fixed position
+			
+				$('#menu li.selected').children('a').stop().animate({top:0}, {easing: 'easeOutQuad', duration:500});
+		
+			}
+		
+		);
+
+	
+	});
+
+	
+	</script>
+
+	
+	<style type="text/css">
+
+			body{
+				background-image:url(3.png);
+				background-repeat: repeat;
+				}
+			.a {
+				color: #CC00CC;
+				font-size:25px;
+				}
+	
+
+		#menu {
+
+				list-style:none;
+	
+			padding:0;
+
+				margin:0 auto;;
+
+				height:70px;
+
+				width:600px;
+
+				}
+
+	
+		#menu li {
+
+				float:left;
+
+				width:109px;
+
+				height:inherit;
+
+				position:relative;
+
+				overflow:hidden;
+
+				}
+
+
+			#menu li a {
+
+				position:absolute;
+
+				top:20px;
+
+				text-indent:-999em;
+
+				background-image:url(jt.jpg);
+				display:block;
+ 
+				width:109px;
+ 
+				height:inherit;
+
+
+					/* fast png fix for ie6 */
+
+				position:relative;
+
+				behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+
+				}
+
+			
+	
+	</style>
+
+	
+</head>
+
+<body>
+	<ul id="menu">
+
+		<li><font color="green" align="center" size="5">三毛</font><a href="sanmao.html"></a></li>
+
+		<li><font color="green" align="center" size="5">张爱玲</font><a href="zal.html"></a></li>
+
+		<li class="selected" class="item3"><font color="green" align="center" size="5">首页</font><a href="index.html"></a></li>
+
+		<li><font color="green" align="center" size="5">李清照</font><a href="lqz.html"></a></li>
+
+		<li><font color="green" align="center" size="5">唐婉</font><a href="tw.html"></a></li>
+
+	</ul>
+
+
+
+
+	<br/>
+	<br/>
+	<SCRIPT>FlashInsert('myResize', 'mainflash/kor_main.swf', '980', '410', 'always', 'transparent', '#000000', 'high', 'middle');</SCRIPT>
+	<br/>
+	<br/>
+	<p class="a">你是否曾读过一本书、一段文、一句话让你久久不能忘怀<br>或是一本传记，让你迫切的想要了解一个人，为他（她）悲喜</p>
+	<br/>
+</body>
+
+</html>
