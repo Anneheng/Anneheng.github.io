@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华丽的jquery图片切换js代码下载-模板王</title>
+<style type="text/css">
+#images-container { height:430px; width:860px; float:left; }
+#images-container #images-mask { height:430px; width:860px; overflow: hidden; }
+#images-container #images-mask img { width:280px; height:210px; }
+#flechas { float:left; height:430px; width:50px; overflow:hidden; background:none repeat scroll 0 0 #FFFFFF; border:1px solid #AAAAAA; }
+#separator { height:350px; width:50px; }
+#flechas .button { height:50px; height:40px; opacity:.8; }
+#flechas .button:hover { opacity:1; }
+p {font-size:20px;
+	color:red;
+	}
+</style>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> 
+<script type="text/javascript" src="js/jquery.magicScroller.v1.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+	params = {
+		mask:$('#images-mask'),
+		elements:$('#images-mask img'),
+		prevbtn:$('#prev-button'),
+		nextbtn:$('#next-button'),
+		displaytype:'column',
+		elementsByRow:3,
+		rowsDisplayed:2		
+	};
+	$('#images-container').magicScroller( params );
+ });
+</script>
+</head>
+<body style="background-color:grey">
+<p style="text-align:center;"><b>张爱玲</b></p>
+<p style="text-align:right;">——民国世界的临水照花人</p>
+<div id="images-container">
+	<div id="images-mask">
+		<img src="imagenes/agujero.jpg" alt="naturaleza" />
+		<img src="imagenes/desktop_20naturaleza.jpg" alt="naturaleza" />
+		<img src="imagenes/images3.png" alt="naturaleza" />
+		<img src="imagenes/naturaleza.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza1.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza5.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza18.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza_en_azul.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza-viva-517.jpg" alt="naturaleza" />
+		<img src="imagenes/naturalezax.jpg" alt="naturaleza" />
+		<img src="imagenes/naturalezax2.jpg" alt="naturaleza" />
+		<img src="imagenes/naturalezaxx.jpg" alt="naturaleza" />
+		<img src="imagenes/naturaleza-y-vida-en-lierganes-582.jpg" alt="naturaleza" />
+		<img src="imagenes/natural-light-yonover.jpg" alt="naturaleza" />
+		<img src="imagenes/turismo-naturaleza-madrid.jpg" alt="naturaleza" />
+	</div>
+		<!-- images-mask -->
+</div>
+		<!-- image-container -->
+<div id="flechas">
+	<a id="prev-button" href="#" class="button"><img src="imagenes/up.jpg" alt="up" /> </a>
+ 	<div id="separator"></div>
+	<a id="next-button" href="#" class="button"> <img src="imagenes/down.jpg" alt="down" /> </a>
+</div>
+		<!-- flechas -->
+	<br/>
+	<br/>
+	<p  style="color:green;">张爱玲当然是不世出的天才，她的文字风格很有趣，像是绕过了五四时期的文学，直接从《红楼梦》、《金瓶梅》那一脉下来的,张爱玲的小说语言更纯粹，是正宗的中文，她的中国传统文化造诣其实很深。</p>
+	<p style="text-align:right;color:green;">-- 白先勇（当代著名作家）</p>
+	<div style="width:800px;margin:20px left;">
+		<p>张爱玲经典著作：</p>
+		
+	  <ol>
+	    <li><a href="https://www.baidu.com/s?wd=%E3%80%8A%E9%87%91%E9%94%81%E8%AE%B0%E3%80%8B&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YvmvuWm1RduH6sPyR4nj040ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPjc4nWmkPWb3" target="_blank" rel="nofollow">《金锁记》</a></li>
+		    <li><a href="https://www.baidu.com/s?wd=%E3%80%8A%E5%80%BE%E5%9F%8E%E4%B9%8B%E6%81%8B%E3%80%8B&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YvmvuWm1RduH6sPyR4nj040ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPjc4nWmkPWb3" target="_blank" rel="nofollow">《倾城之恋》</a></li>
+		    <li><a href="https://www.baidu.com/s?wd=%E3%80%8A%E5%8D%8A%E7%94%9F%E7%BC%98%E3%80%8B&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YvmvuWm1RduH6sPyR4nj040ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPjc4nWmkPWb3" target="_blank" rel="nofollow">《半生缘》</a></li>
+		    <li><a href="https://www.baidu.com/s?wd=%E3%80%8A%E7%BA%A2%E7%8E%AB%E7%91%B0%E4%B8%8E%E7%99%BD%E7%8E%AB%E7%91%B0%E3%80%8B&amp;tn=44039180_cpr&amp;fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YvmvuWm1RduH6sPyR4nj040ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPjc4nWmkPWb3" target="_blank" rel="nofollow">《红玫瑰与白玫瑰》</a></li>
+      </ol>
+	  <p>张爱玲经典爱情语录：</p>
+	  <div>
+	    <p>也许每一个男子全都有过这样的两个女人，至少两个． 娶了红玫瑰，久而久之，红的变了墙上的一抹蚊子血，白的还是“床前明月光”； 娶了白玫瑰，白的便是衣服上的一粒饭粘子，红的却是心口上的一颗朱砂痣。</p>
+	  </div>
+	</div>
+</div>
+<p style="font-color:black;"><a href="index.html">返回主页</a></p>
+</body>
+</html>
